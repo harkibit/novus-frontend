@@ -1,3 +1,16 @@
+:root {
+  --border-radius: 5px;
+  --card-padding: 2rem;
+  --green: #2abe69;
+  --red: #d86d4e;
+  --blue: #0070b7;
+  --yellow: #fecc27;
+  --lightblue: #4dbae6;
+  --lightgrey: #bdbdbd;
+}
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   padding: 0;
@@ -13,4 +26,25 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.taskCard__tag-red {
+  background-color: rgb(243 221 221);
+  color: var(--red);
+}
+.taskCard__tag-blue {
+  background-color: rgb(233 233 255);
+  color: var(--blue);
+}
+.taskCard__tag-grey {
+  background-color: #e8e8e8;
+  color: var(--lightgrey);
+}
+.taskCard__tag-yellow {
+  background-color: rgb(253 253 219);
+  color: var(--yellow);
+}
+.taskCard__tag-green {
+  background-color: rgb(225 255 225);
+  color: var(--green);
 }

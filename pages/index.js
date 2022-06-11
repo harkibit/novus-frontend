@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
+import TaskCard from "../components/TaskCard";
 import styles from "../styles/Home.module.css";
 
 // import { getUsers } from "../utils/users";
