@@ -28,23 +28,23 @@ a {
   box-sizing: border-box;
 }
 
-.taskCard__tag-red {
+.tag-red {
   background-color: rgb(243 221 221);
   color: var(--red);
 }
-.taskCard__tag-blue {
+.tag-blue {
   background-color: rgb(233 233 255);
   color: var(--blue);
 }
-.taskCard__tag-grey {
+.tag-grey {
   background-color: #e8e8e8;
   color: var(--lightgrey);
 }
-.taskCard__tag-yellow {
+.tag-yellow {
   background-color: rgb(253 253 219);
   color: var(--yellow);
 }
-.taskCard__tag-green {
+.tag-green {
   background-color: rgb(225 255 225);
   color: var(--green);
 }
