@@ -4,13 +4,7 @@ import { useEffect } from "react";
 import TaskCard from "../components/TaskCard";
 import styles from "../styles/Home.module.css";
 
-// import { getUsers } from "../utils/users";
-
 export default function Home() {
-  // useEffect(() => {
-  //   getUsers();
-  // }, []);
-
   return (
     <div className={styles.container}>
       <Head>
