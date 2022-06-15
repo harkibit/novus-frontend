@@ -9,12 +9,20 @@ import { FiHome } from "react-icons/fi";
 import { TbNotebook } from "react-icons/tb";
 import { BsFillGridFill } from "react-icons/bs";
 import { GiStairsGoal } from "react-icons/gi";
+import { Avatar } from "@mui/material";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
+  const { user_name, user_email, user_avatar } = props;
   return (
     <div className={styles.sidebar}>
       <div>
-        <Image src="/vercel.svg" alt="novus-logo" width="100" height="100" />
+        <Image
+          src="/vercel.svg"
+          alt="novus-logo"
+          width="100"
+          height="100"
+          className={styles.sidebar_logo}
+        />
 
         <div>
           <ul className={styles.sidebar_links}>
@@ -46,7 +54,17 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <div></div>
+      <div className={styles.sidebar_userContainer}>
+        <Avatar
+          src={user_avatar}
+          className={styles.sidebar_avatar}
+          alt="user avatar"
+        />
+        <div className={styles.sidebar_userinfo}>
+          <h4>{user_name}</h4>
+          <span>{user_email}</span>
+        </div>
+      </div>
     </div>
   );
 }

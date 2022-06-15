@@ -23,12 +23,14 @@
   position: fixed;
   width: 300px;
   border-right: 1px solid var(--lightgrey);
-  padding: 10px 30px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.sidebar_logo {
+  margin: 0;
+}
 .sidebar_links {
   display: flex;
   flex-direction: column;
@@ -51,6 +53,20 @@
   font-size: 20px;
 }
 
+.sidebar_userContainer {
+  display: flex;
+  align-items: center;
+}
+.sidebar_userinfo h4 {
+  margin: 0;
+}
+.sidebar_userinfo span {
+  font-size: 14px;
+  color: var(--grey);
+}
+.sidebar_avatar {
+  margin-right: 10px;
+}
 .activeLink {
   color: var(--blue) !important;
 }
