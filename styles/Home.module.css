@@ -1,3 +1,8 @@
+.container {
+  justify-content: center;
+  display: flex;
+}
+
 /* Landing Page Section */
 .landingPage_navbar {
   display: flex;
@@ -6,6 +11,10 @@
   flex-grow: 1;
 }
 .landingPage_margin {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    width: 1500px;
     margin: 0 100px;
 }
 .landingPage_heroSection {
