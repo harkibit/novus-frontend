@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import styles from "../styles/Home.module.css";
 
-import { Box, Toolbar } from "@mui/material";
+import { Box, Toolbar, Container } from "@mui/material";
 
 const drawerWidth = 240;
 
@@ -26,7 +26,7 @@ export default function Layout(props) {
       >
         {/* instead of toolbar we'll add a navbar */}
         <Toolbar />
-        {props.children}
+        <Container fixed>{props.children}</Container>
       </Box>
     </Box>
   );
