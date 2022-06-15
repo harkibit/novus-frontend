@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/Image";
-import Link from "next/Link";
 
 import styles from "../styles/Home.module.css";
 import ActiveLink from "../components/ActiveLink";
@@ -32,24 +31,24 @@ export default function Sidebar(props) {
                 Dashboard
               </li>
             </ActiveLink>
-            <Link href="/">
+            <ActiveLink href="/" activeClassName={styles.activeLink}>
               <li>
                 <TbNotebook />
                 Notes
               </li>
-            </Link>
-            <Link href="/">
+            </ActiveLink>
+            <ActiveLink href="/" activeClassName={styles.activeLink}>
               <li>
                 <BsFillGridFill />
                 Projects
               </li>
-            </Link>
-            <Link href="/">
+            </ActiveLink>
+            <ActiveLink href="/" activeClassName={styles.activeLink}>
               <li>
                 <GiStairsGoal />
                 Goals
               </li>
-            </Link>
+            </ActiveLink>
           </ul>
         </div>
       </div>
