@@ -1,8 +1,7 @@
-import styles from "../styles/Home.module.css";
+import React from "react";
+import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
 
-export default function Test() {
-  return (
-    <div className={styles.container}>
-    </div>
-  );
+export default function test() {
+  return <Layout>Hello</Layout>;
 }

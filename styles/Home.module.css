@@ -172,3 +172,77 @@
   margin-right: 10px;
   font-size: 14px;
 }
+
+/* sidebar start */
+.sidebar {
+  min-height: 100vh;
+  position: fixed;
+  width: 240px;
+  border-right: 1px solid var(--lightgrey);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar_logo {
+  margin: 0;
+}
+.sidebar_links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar_links li {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  color: var(--grey);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sidebar_links li > :nth-child(1) {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.sidebar_userContainer {
+  display: flex;
+  align-items: center;
+}
+.sidebar_userinfo h4 {
+  margin: 0;
+}
+.sidebar_userinfo span {
+  font-size: 14px;
+  color: var(--grey);
+}
+.sidebar_avatar {
+  margin-right: 10px;
+}
+.activeLink {
+  color: var(--blue) !important;
+}
+.activeLink::before {
+  content: "";
+  width: 4px;
+  height: 45px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 0;
+  border-radius: 0 7px 7px 0;
+}
+/* sidebar end */
+
+.main_container {
+  margin-left: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    margin-left: 0;
+  }
+}
