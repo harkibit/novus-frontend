@@ -3,6 +3,7 @@ import Image from "next/Image";
 import Link from "next/Link";
 
 import styles from "../styles/Home.module.css";
+import ActiveLink from "../components/ActiveLink";
 
 import { FiHome } from "react-icons/fi";
 import { TbNotebook } from "react-icons/tb";
@@ -17,12 +18,12 @@ export default function Sidebar() {
 
         <div>
           <ul className={styles.sidebar_links}>
-            <Link href="/">
+            <ActiveLink href="/test" activeClassName={styles.activeLink}>
               <li>
                 <FiHome />
                 Dashboard
               </li>
-            </Link>
+            </ActiveLink>
             <Link href="/">
               <li>
                 <TbNotebook />
