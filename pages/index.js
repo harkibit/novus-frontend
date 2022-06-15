@@ -1,13 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from 'next/image';
-import logo from '../assets/logo.png';
-import red from '../assets/landingPage/red.png';
-import blue from '../assets/landingPage/blue.png';
-import green from '../assets/landingPage/green.png';
-import yellow from '../assets/landingPage/yellow.png';
-import desktop from '../assets/landingPage/desktop.png';
-import mobile from '../assets/landingPage/mobile.png';
+import logo from '../public/assets/logo.png';
+import red from '../public/assets/landingPage/red.png';
+import blue from '../public/assets/landingPage/blue.png';
+import green from '../public/assets/landingPage/green.png';
+import yellow from '../public/assets/landingPage/yellow.png';
+import desktop from '../public/assets/landingPage/desktop.png';
+import mobile from '../public/assets/landingPage/mobile.png';
 import { AppBar, Toolbar, Button } from "@mui/material";
 
 export default function Home() {
