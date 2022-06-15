@@ -1,3 +1,150 @@
+/* Landing Page Section */
+.landingPage_navbar {
+  display: flex;
+}
+.landingPage_logo {
+  flex-grow: 1;
+}
+.landingPage_margin {
+    margin: 0 100px;
+}
+.landingPage_heroSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage_heroSectionRectangles {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+.landingPage_titlesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.landingPage_heroTitle_h1 {
+  font-size: 150px;
+  margin: 20px 0px 0px;
+  font-weight: normal;
+}
+.landingPage_heroTitle_h3 {
+  font-size: 40px;
+  margin: 0px;
+  font-weight: normal;
+  width: 375px;
+  text-align: center;
+}
+.landingPage_yellowRectangle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: -35%;
+  top: 150px;
+}
+.landingPage_blueRectangle {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 30%;
+  top: 200px;
+}
+.landingPage_greenRectangle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -45%;
+  top: 250px;
+}
+.landingPage_redRectangle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 40%;
+  top: 250px;
+}
+.landingPage_exampleRectangles{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  width: 100%;
+}
+.landingPage_desktopRectangle {
+  width: 800px;
+  position: relative;
+  top: -100px;
+}
+.landingPage_mobileRectangle {
+  width: 400px;
+  position: absolute;
+  left: 5%;
+}
+@media only screen and (max-width: 800px) {
+  .landingPage_margin {
+    margin: 0px 20px;
+  }
+  .landingPage_heroTitle_h1 {
+    font-size: 80px;
+  }
+  .landingPage_heroTitle_h3 {
+    width: 185px;
+    font-size: 20px;
+  }
+  .landingPage_yellowRectangle {
+    width: 50px;
+    height: 50px;
+    top: 80px;
+  }
+  .landingPage_blueRectangle {
+    width: 40px;
+    height: 40px;
+    top: 160px;
+  }
+  .landingPage_greenRectangle {
+    width: 30px;
+    height: 30px;
+    top: 200px;
+  }
+  .landingPage_redRectangle {
+    width: 60px;
+    height: 60px;
+    top: 200px;
+  }
+  .landingPage_exampleRectangles {
+    top: 80px;
+  }
+  .landingPage_desktopRectangle {
+    width: 90%;
+    top: -160px;
+  }
+  .landingPage_mobileRectangle {
+    width: 50%;
+    top: 100px;
+    left: -10%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landingPage_exampleRectangles {
+    top: 130px;
+  }
+  .landingPage_mobileRectangle {
+    top: -50px;
+  }
+}
+
+/* Task Card Section */
 .taskCardContainer {
   padding: var(--card-padding);
   border-radius: var(--border-radius);
