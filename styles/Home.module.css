@@ -21,7 +21,7 @@
 .sidebar {
   min-height: 100vh;
   position: fixed;
-  width: 300px;
+  width: 280px;
   border-right: 1px solid var(--lightgrey);
   padding: 30px;
   display: flex;
@@ -80,3 +80,7 @@
   border-radius: 0 7px 7px 0;
 }
 /* sidebar end */
+
+.main_container {
+  margin-left: 280px;
+}
