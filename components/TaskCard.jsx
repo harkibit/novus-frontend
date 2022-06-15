@@ -9,9 +9,7 @@ export default function TaskCard(props) {
         {tags?.map((tag) => (
           <div
             // style={{ backgroundColor: tag.bg, color: tag.color }}
-            className={`${styles.taskCard__tag} ${"taskCard__tag-".concat(
-              tag.bg
-            )}`}
+            className={`${styles.taskCard__tag} ${"tag-".concat(tag.bg)}`}
           >
             {tag.name}
           </div>
