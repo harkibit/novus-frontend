@@ -9,6 +9,10 @@ import yellow from '../public/assets/landingPage/yellow.png';
 import desktop from '../public/assets/landingPage/desktop.png';
 import mobile from '../public/assets/landingPage/mobile.png';
 import { AppBar, Toolbar, Button } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
+import { AiOutlineUnorderedList, AiOutlineBulb, AiOutlineCheck } from "react-icons/ai";
+
 
 export default function Home() {
   return (
@@ -93,8 +97,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <span>test</span>
+        <div className={styles.landingPage_features}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{ maxWidth: 500, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+            Stay organized and manage everything related to your
+            study, career and work</Typography>
+            <div className={styles.landingPage_featureSection}>
+              <div className={`${styles.landingPage_featureBox} ${styles.landingPage_featureBox_first}`}>
+                <AiOutlineUnorderedList fontSize={150} color="var(--blue)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                  Add Projects, where you can manage tasks and deadlines</Typography>
+              </div>
+              <div className={`${styles.landingPage_featureBox} ${styles.landingPage_featureBox_second}`}>
+                <AiOutlineBulb fontSize={150} color="var(--yellow)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                  Manage Goals, notes and tasks and keep track of your progress</Typography>
+              </div>
+              <div className={styles.landingPage_featureBox}>
+                <AiOutlineCheck fontSize={150} color="var(--green)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                 Get everything done on time without worrying about management</Typography>
+              </div>
+            </div>
         </div>
       </div>
     </div>
