@@ -104,6 +104,7 @@
 }
 .landingPage_features {
   margin-bottom: 200px;
+  padding: 0px 80px;
 }
 .landingPage_featureSection {
   display: flex;
