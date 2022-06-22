@@ -25,7 +25,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.landingPage_margin}>
+      <div className={styles.landingPage_padding}>
         <div className={styles.landingPage_navbar}>
           <AppBar position="static" color="transparent" elevation={0}>
             <Toolbar color="transparent">
@@ -131,7 +131,41 @@ export default function Home() {
               </div>
             </div>
         </div>
+        <div className={styles.landingPage_slogan}>
+          <div className={styles.landingPage_sloganMobile}>
+            <Typography
+                  variant="h4"
+                  component="div"
+                  color="white"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'center'}}>
+                 Your time is your most valuable resource</Typography>
+          </div>
+          <div className={styles.landingPage_sloganDesktop}>
+            <div className={styles.landingPage_sloganDesktopBlueBox}>
+              <Typography
+                  variant="h3"
+                  component="div"
+                  color="white"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'right'}}>
+                 Your time <br /> valuable</Typography>
+            </div>
+            <div className={styles.landingPage_sloganDesktopBox}>
+              <Typography
+                  variant="h3"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'left'}}>
+                 is your most <br /> resource</Typography>
+            </div>
+          </div>
+        </div>
       </div>
+      <div className={styles.landingPage_footer}>
+          <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{fontWeight: 400}}>
+                 Copyright c 2021 - Novus</Typography>
+        </div>
     </div>
   );
 }
