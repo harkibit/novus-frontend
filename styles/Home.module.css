@@ -1,6 +1,8 @@
 .container {
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Landing Page Section */
@@ -10,12 +12,12 @@
 .landingPage_logo {
   flex-grow: 1;
 }
-.landingPage_margin {
+.landingPage_padding {
     display: flex;
     max-width: 100%;
     flex-direction: column;
     width: 1500px;
-    margin: 0 100px;
+    padding: 0 100px;
 }
 .landingPage_heroSection {
   display: flex;
@@ -100,9 +102,66 @@
   position: absolute;
   left: 5%;
 }
+.landingPage_features {
+  margin-bottom: 200px;
+  padding: 0px 80px;
+}
+.landingPage_featureSection {
+  display: flex;
+  justify-content: space-between;
+}
+.landingPage_featureBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.landingPage_featureBox_first {
+  position: relative;
+  top: 200px;
+}
+.landingPage_featureBox_second {
+  position: relative;
+  top: 100px;
+}
+.landingPage_sloganMobile {
+  min-height: 250px;
+  background-color: var(--blue);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: -20px;
+  padding: 20px;
+}
+.landingPage_sloganDesktop {
+  display: flex;
+  align-items: center;
+  background-image: url('/assets/landingPage/slogan.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 630px;
+}
+.landingPage_sloganDesktopBlueBox {
+  background-color: var(--blue);
+  padding-left: 20%;
+  padding-right: 10px;
+  margin-right: 10px;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius:15px;
+}
+.landingPage_footer {
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
 @media only screen and (max-width: 800px) {
-  .landingPage_margin {
-    margin: 0px 20px;
+  .landingPage_padding {
+    padding: 0px 20px;
   }
   .landingPage_heroTitle_h1 {
     font-size: 80px;
@@ -142,6 +201,39 @@
     width: 50%;
     top: 100px;
     left: -10%;
+  }
+  .landingPage_features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0px;
+  }
+  .landingPage_featureSection {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .landingPage_featureBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .landingPage_featureBox div {
+    padding-top: 10px;
+  }
+  .landingPage_featureBox_first {
+    position: unset;
+  }
+  .landingPage_featureBox_second {
+    position: unset;
+  }
+  .landingPage_sloganMobile {
+    display: flex;
+  }
+  .landingPage_sloganDesktop {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {

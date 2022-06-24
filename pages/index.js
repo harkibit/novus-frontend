@@ -9,6 +9,10 @@ import yellow from '../public/assets/landingPage/yellow.png';
 import desktop from '../public/assets/landingPage/desktop.png';
 import mobile from '../public/assets/landingPage/mobile.png';
 import { AppBar, Toolbar, Button } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
+import { AiOutlineUnorderedList, AiOutlineBulb, AiOutlineCheck } from "react-icons/ai";
+
 
 export default function Home() {
   return (
@@ -21,7 +25,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.landingPage_margin}>
+      <div className={styles.landingPage_padding}>
         <div className={styles.landingPage_navbar}>
           <AppBar position="static" color="transparent" elevation={0}>
             <Toolbar color="transparent">
@@ -93,10 +97,75 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <span>test</span>
+        <div className={styles.landingPage_features}>
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{ maxWidth: 500, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+            Stay organized and manage everything related to your
+            study, career and work</Typography>
+            <div className={styles.landingPage_featureSection}>
+              <div className={`${styles.landingPage_featureBox} ${styles.landingPage_featureBox_first}`}>
+                <AiOutlineUnorderedList fontSize={150} color="var(--blue)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                  Add Projects, where you can manage tasks and deadlines</Typography>
+              </div>
+              <div className={`${styles.landingPage_featureBox} ${styles.landingPage_featureBox_second}`}>
+                <AiOutlineBulb fontSize={150} color="var(--yellow)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                  Manage Goals, notes and tasks and keep track of your progress</Typography>
+              </div>
+              <div className={styles.landingPage_featureBox}>
+                <AiOutlineCheck fontSize={150} color="var(--green)"/>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: { xs: 'center', md: 'left' }}}>
+                 Get everything done on time without worrying about management</Typography>
+              </div>
+            </div>
+        </div>
+        <div className={styles.landingPage_slogan}>
+          <div className={styles.landingPage_sloganMobile}>
+            <Typography
+                  variant="h4"
+                  component="div"
+                  color="white"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'center'}}>
+                 Your time is your most valuable resource</Typography>
+          </div>
+          <div className={styles.landingPage_sloganDesktop}>
+            <div className={styles.landingPage_sloganDesktopBlueBox}>
+              <Typography
+                  variant="h3"
+                  component="div"
+                  color="white"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'right'}}>
+                 Your time <br /> valuable</Typography>
+            </div>
+            <div className={styles.landingPage_sloganDesktopBox}>
+              <Typography
+                  variant="h3"
+                  component="div"
+                  sx={{ maxWidth: 400, fontWeight: 400, textAlign: 'left'}}>
+                 is your most <br /> resource</Typography>
+            </div>
+          </div>
         </div>
       </div>
+      <div className={styles.landingPage_footer}>
+          <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{fontWeight: 400}}>
+                 Copyright c 2021 - Novus</Typography>
+        </div>
     </div>
   );
 }
